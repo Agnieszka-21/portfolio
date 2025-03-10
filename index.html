@@ -56,7 +56,7 @@
         }
         
         header {
-            background: linear-gradient(-45deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+            background-color: var(--dark);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             color: var(--light);
@@ -64,28 +64,6 @@
             text-align: center;
             position: relative;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--header-overlay);
-            z-index: 1;
-        }
-        
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background: linear-gradient(to bottom, transparent, var(--light));
-            z-index: 2;
         }
         
         .header-content {
@@ -141,7 +119,7 @@
         
         .subtitle {
             font-size: 1.4rem;
-            margin-bottom: 2rem;
+            margin: 2rem 0;
             color: var(--light);
             opacity: 0;
             animation: fadeIn 1s ease 0.3s forwards;
@@ -429,10 +407,9 @@
     
     <header>
         <div class="header-content">
-            <span class="headline-highlight">Welcome to my portfolio</span>
-            <h1>John Doe</h1>
-            <p class="subtitle">Full-Stack Developer | UI/UX Enthusiast | Problem Solver</p>
-            <a href="#projects" class="header-cta">View My Work</a>
+            <h1>Agnieszka Bialek</h1>
+            <p class="subtitle">Full Stack Developer | Python Enthusiast | Problem Solver</p>
+            <a href="#projects" class="header-cta">View My Projects</a>
         </div>
         
         <!-- Decoration particles -->
@@ -451,20 +428,29 @@
             <!-- Project 1 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="/api/placeholder/350/200" alt="Project Thumbnail">
+                    <img src="assets/pp5_products.png" alt="Project Thumbnail">
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">E-Commerce Dashboard</h3>
-                    <p>A responsive admin dashboard with real-time analytics, user management, and inventory tracking features.</p>
+                    <h3 class="project-title">Health Store</h3>
+                    <p>A responsive e-commerce web application for an online health & wellness shop</p>
                     <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Chart.js</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">jQuery</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">CRUD</span>
+                        <span class="tag">Stripe</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Agile</span>
+                        <span class="tag">Heroku</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link live-link">Live Demo</a>
-                        <a href="#" class="project-link code-link">Source Code</a>
+                        <a href="https://health-store-ff0f909bba3d.herokuapp.com/" class="project-link live-link" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Agnieszka-21/health-store" class="project-link code-link" target="_blank">Source Code</a>
                     </div>
                 </div>
             </div>
@@ -472,19 +458,26 @@
             <!-- Project 2 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="/api/placeholder/350/200" alt="Project Thumbnail">
+                    <img src="assets/pp4_booking.png" alt="Project Thumbnail">
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">Recipe Finder App</h3>
-                    <p>A mobile-first web application that helps users discover recipes based on ingredients they already have at home.</p>
+                    <h3 class="project-title">Namaste Yoga Studio</h3>
+                    <p>A responsive web application that allows users to book yoga classes at a studio</p>
                     <div class="project-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">CRUD</span>
+                        <span class="tag">Heroku</span>
+                        <span class="tag">Agile</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link live-link">Live Demo</a>
-                        <a href="#" class="project-link code-link">Source Code</a>
+                        <a href="https://namaste-yoga-studio-d494d1aeeada.herokuapp.com/" class="project-link live-link" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Agnieszka-21/namaste-django" class="project-link code-link" target="_blank">Source Code</a>
                     </div>
                 </div>
             </div>
@@ -492,29 +485,68 @@
             <!-- Project 3 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="/api/placeholder/350/200" alt="Project Thumbnail">
+                    <img src="assets/pp3_madlibs.png" alt="Project Thumbnail">
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">Fitness Tracker</h3>
-                    <p>A comprehensive workout tracking solution with progress visualization, custom workout plans, and social features.</p>
+                    <h3 class="project-title">Mad Libs Grammar</h3>
+                    <p>An interactive mad libs game</p>
                     <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">GraphQL</span>
-                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">APIs</span>
+                        <span class="tag">CRUD</span>
+                        <span class="tag">Heroku</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link live-link">Live Demo</a>
-                        <a href="#" class="project-link code-link">Source Code</a>
+                        <a href="https://mad-libs-grammar-324ea3a36fdb.herokuapp.com/" class="project-link live-link" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Agnieszka-21/madlibs" class="project-link code-link" target="_blank">Source Code</a>
                     </div>
                 </div>
             </div>
             
-            <!-- Add more projects here -->
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/pp2_memory.png" alt="Project Thumbnail">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Cat ASMR Memory Game</h3>
+                    <p>An interactive web application, fully responsive</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://agnieszka-21.github.io/memory-game-cats/" class="project-link live-link" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Agnieszka-21/memory-game-cats" class="project-link code-link" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/pp1_mats.png" alt="Project Thumbnail">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Yoga Mats</h3>
+                    <p>An fully responsive web application that helps users choose the best yoga mat for them</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://agnieszka-21.github.io/yoga-mats/index.html" class="project-link live-link" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Agnieszka-21/yoga-mats" class="project-link code-link" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     
     <footer>
-        <p>&copy; 2025 John Doe. All rights reserved.</p>
+        <p>&copy; 2025 Agnieszka Bialek. All rights reserved.</p>
     </footer>
 </body>
 </html>
